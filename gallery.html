@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        /* Header */
+    header{
+        background-color:rgb(19, 107, 78);
+        text-align: center;
+        color: whitesmoke;
+        padding: 20px;
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+   nav a:hover {
+    color:black;
+}
+/* 🔥 Auto Grid System */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;   /* Important for correct fitting */
+            border: 3px ;
+        }
+
+
+    </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="announcement.html">Announcement</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+    <div class="gallery">
+        <img src="vinayaka5.jpeg">
+        <img src="vinayaka4.jpeg">
+        <img src="vinayaka1.jpeg">
+        <img src="vinayaka3.jpeg">
+        <img src="vinayaka2.jpeg">
+        <img src="my god.png">
+        <img src="malkshmi2.jpeg">
+        <img src="vinayaka3.jpeg">
+        </div> 
+</body>
+</html>
